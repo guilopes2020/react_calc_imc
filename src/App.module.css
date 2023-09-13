@@ -6,6 +6,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.main {
+    padding-bottom: 50px;
+}
+
 .headerContainer {
     max-width: 900px;
     margin: 30px auto;
@@ -105,3 +109,31 @@ body {
 .container .rightSide .rightArrow:hover {
     transform: scale(1.1);
 } 
+
+@media (max-width: 821px) {
+    header {
+        padding: 0 20px;
+    }
+    .container {
+        padding: 0 20px;
+        flex-direction: column;
+    }
+    .container .leftSide {
+        margin-right: 0;
+    }
+    .container .rightSide {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    .container .rightSide .rightArrow {
+        margin-left: 0;
+        margin-top: 0;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 430px) { 
+    .container .rightSide .grid {
+        grid-template-columns: 1fr;
+    }
+}
